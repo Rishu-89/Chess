@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -10,8 +10,8 @@
         display: grid;
         grid-template-columns: repeat(8, minmax(0, 1fr));
         grid-template-rows: repeat(8, minmax(0, 1fr));
-        width: 800px;
-        height: 800px;
+        /* width: 400px;
+        height: 400px; */
         transform: rotate(0deg);
     }
 
@@ -59,15 +59,17 @@
     .flipped .piece {
         transform: rotate(180deg);
     }
+    #pgn{  color: white;}
 </style>
 </head>
 <body>
 
   <div class="w-full h-screen flex items-center justify-center bg-zinc-900">
-<div class="chessboard w-[40rem] h-[40rem] bg-red-800"></div>
+<div class="chessboard w-[32rem] h-[32rem] bg-red-800"></div>
+
 
   </div>
-
+  
 
 
 
@@ -89,9 +91,4 @@
 
 
 
-<!--   
-<form action="/start" method="post" >
-
-    <input type="submit">
-  </form>
-   -->
+    

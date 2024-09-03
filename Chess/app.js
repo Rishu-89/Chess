@@ -32,7 +32,7 @@ app.use(express.static(path.join(__dirname,'public')));
 
 
 app.get('/',(req,res)=>{
-  res.render("index",{title:"chess Game"});
+  res.render("start",{title:"chess Game"});
 })
 
 
@@ -53,14 +53,6 @@ app.get('/game',(req,res)=>{
 io.on("connection", function(uniquesocket){
 
 
-  // for send a event to all the user
-  // usocket.on("churan",()=>{
-  //   io.emit("churan papdi");
-  // })
-
-  // usocket.on("disconnect",()=>{
-  //   console.log("disconnected")
-  // })
 
   if(!players.white){
     players.white=uniquesocket.id;
